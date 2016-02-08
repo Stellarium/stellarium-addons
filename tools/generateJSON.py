@@ -39,9 +39,19 @@ for root, dirs, files in os.walk(srcPath):
             # copy data from info.json
             with open(os.path.join(root, file)) as df:
                 addon = json.load(df)
-                # calculates md5 checksum
+                key = addon.keys()[0]
                 zipf = os.path.join(zipPath, os.path.relpath(root, srcPath) + '.zip')
-                addon[addon.keys()[0]].update({'checksum': md5(zipf)})
+
+                # download info
+                addon[key].update(
+                        {
+                            'checksum': md5(zipf),
+                            'download-size': os.path.getsize(zipf),
+                            'download-url': '',
+                            'download-filename': ''
+                        }
+                )
+
                 addons.update(addon)
                 break
             print 'ERROR! ' + root
