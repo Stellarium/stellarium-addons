@@ -52,9 +52,15 @@ for root, dirs, files in os.walk(srcPath):
                         }
                 )
 
+                # key must be unique
+                if key in addons:
+                    print 'ERROR! Key is not unique! ' + root
+                    break
+
+                # adds add-on
                 addons.update(addon)
                 break
-            print 'ERROR! ' + root
+            print 'ERROR! Unable to load ' + root
 
 jsonObj = {
     'name':             'Add-ons Catalog',
