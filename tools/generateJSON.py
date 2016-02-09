@@ -18,6 +18,7 @@
 """
 
 import os
+import sys
 import json
 import hashlib
 
@@ -29,8 +30,13 @@ def md5(path):
     return hash.hexdigest()
 
 stellariumSeries = '0.15'
-srcPath = '../files/src'
-zipPath = '../files/zip'
+srcPath = os.path.join(os.getcwd(), 'files/src')
+zipPath = os.path.join(os.getcwd(), 'files/zip')
+
+# checks current directory
+if os.path.basename(os.getcwd()) != 'stellarium-addons':
+    print('ERROR! Are you in root?')
+    sys.exit(1)
 
 addons = {}
 for root, dirs, files in os.walk(srcPath):
@@ -68,6 +74,6 @@ jsonObj = {
     'add-ons':          addons
 }
 
-jsonOut = open('../default_addons_' + stellariumSeries + '.json', 'w')
+jsonOut = open('catalogs/default_addons_' + stellariumSeries + '.json', 'w')
 json.dump(jsonObj, jsonOut, indent=4)
 jsonOut.close()
