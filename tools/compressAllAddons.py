@@ -17,12 +17,9 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-import os
+from  const import *
 import shutil
 import zipfile
-
-srcPath = '../files/src'
-zipPath = '../files/zip'
 
 def compressAddons(srcRoot, zipRoot):
     for root, dirs, files in os.walk(srcRoot):

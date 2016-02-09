@@ -17,7 +17,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-import os
+from  const import *
 import sys
 import json
 import hashlib
@@ -30,13 +30,13 @@ def md5(path):
     return hash.hexdigest()
 
 stellariumSeries = '0.15'
-srcPath = os.path.join(os.getcwd(), 'addons/src')
-zipPath = os.path.join(os.getcwd(), 'addons/zip')
 
 # checks current directory
 if os.path.basename(os.getcwd()) != 'stellarium-addons':
     print('ERROR! Are you in root?')
     sys.exit(1)
+
+print('Generating catalog: ' + stellariumSeries)
 
 addons = {}
 for root, dirs, files in os.walk(srcPath):
@@ -49,12 +49,13 @@ for root, dirs, files in os.walk(srcPath):
                 zipf = os.path.join(zipPath, os.path.relpath(root, srcPath) + '.zip')
 
                 # download info
+                filename = os.path.basename(zipf)
                 addon[key].update(
                         {
                             'checksum': md5(zipf),
                             'download-size': os.path.getsize(zipf),
-                            'download-url': '',
-                            'download-filename': ''
+                            'download-url': url + filename,
+                            'download-filename': filename
                         }
                 )
 
@@ -77,3 +78,5 @@ jsonObj = {
 jsonOut = open('catalogs/default_addons_' + stellariumSeries + '.json', 'w')
 json.dump(jsonObj, jsonOut, indent=4)
 jsonOut.close()
+
+print('Done! ' + jsonOut.name)
