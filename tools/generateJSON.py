@@ -30,8 +30,8 @@ def md5(path):
     return hash.hexdigest()
 
 stellariumSeries = '0.15'
-srcPath = os.path.join(os.getcwd(), 'files/src')
-zipPath = os.path.join(os.getcwd(), 'files/zip')
+srcPath = os.path.join(os.getcwd(), 'addons/src')
+zipPath = os.path.join(os.getcwd(), 'addons/zip')
 
 # checks current directory
 if os.path.basename(os.getcwd()) != 'stellarium-addons':
