@@ -18,9 +18,10 @@
 """
 
 from  const import *
-import sys
-import json
 import hashlib
+import json
+import sys
+import time
 
 def md5(path):
     hash = hashlib.md5()
@@ -70,9 +71,10 @@ for root, dirs, files in os.walk(srcPath):
             print 'ERROR! Unable to load ' + root
 
 jsonObj = {
-    'name':             'Add-ons Catalog',
-    'format-version':   1,
-    'add-ons':          addons
+    'name':    'Add-ons Catalog',
+    'format':  1,
+    'version': time.strftime("%Y.%m.%d"),
+    'add-ons': addons
 }
 
 jsonOut = open('catalogs/default_addons_' + stellariumSeries + '.json', 'w')
