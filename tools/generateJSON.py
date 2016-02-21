@@ -78,7 +78,7 @@ jsonObj = {
 }
 
 jsonOut = open('catalogs/default_addons_' + stellariumSeries + '.json', 'w')
-json.dump(jsonObj, jsonOut, indent=4)
+json.dump(jsonObj, jsonOut, indent=4, separators=(',', ': '))
 jsonOut.close()
 
 print('Done! ' + jsonOut.name)
