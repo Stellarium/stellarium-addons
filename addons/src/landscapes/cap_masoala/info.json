@@ -3,6 +3,7 @@
     {
       "type": "landscape",
       "title": "Cap Masoala, Madagascar",
+      "version": "2016.02.01",
       "description": "This panorama was photographed from the abandoned French lighthouse at the southernmost point of the Masoala peninsula in Madagascar. It provides a spectacular view over the Indian Ocean and the Masoala peninsula that is still mainly covered with rainforest.",
       "supported": ["0.10","0.11","0.12","0.13","0.14","0.15"],
       "license": "GPLv2",
