@@ -14,7 +14,7 @@
                 "0.14",
                 "0.15"
             ],
-            "download-url": "https://raw.githubusercontent.com/Stellarium/stellarium-addons/tree/master/addons/zip/cap_masoala.zip",
+            "download-url": "https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/landscape/cap_masoala.zip",
             "download-filename": "cap_masoala.zip",
             "version": "2016.02.01",
             "authors": [
@@ -41,7 +41,7 @@
                 "0.14",
                 "0.15"
             ],
-            "download-url": "https://raw.githubusercontent.com/Stellarium/stellarium-addons/tree/master/addons/zip/mars_husband_hill.zip",
+            "download-url": "https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/landscape/mars_husband_hill.zip",
             "download-filename": "mars_husband_hill.zip",
             "version": "2016.02.01",
             "authors": [
@@ -55,7 +55,7 @@
             "download-size": 1823975
         }
     },
-    "version": "2016.02.21",
+    "version": "2016.02.24",
     "name": "Add-ons Catalog",
     "format": 1
 }
