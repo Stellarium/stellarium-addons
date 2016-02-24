@@ -22,3 +22,7 @@ import os
 srcPath = os.path.join(os.getcwd(), 'addons/src')
 zipPath = os.path.join(os.getcwd(), 'addons/zip')
 url = 'https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/'
+
+def getFolder(addonType):
+    if (addonType == 'landscape'):
+        return 'landscapes'

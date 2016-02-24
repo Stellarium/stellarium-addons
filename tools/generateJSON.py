@@ -55,7 +55,7 @@ for root, dirs, files in os.walk(srcPath):
                         {
                             'checksum': md5(zipf),
                             'download-size': os.path.getsize(zipf),
-                            'download-url': url + str(addon[key]['type']) + '/' + filename,
+                            'download-url': url + getFolder(addon[key]['type']) + '/' + filename,
                             'download-filename': filename
                         }
                 )
