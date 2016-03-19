@@ -1,5 +1,33 @@
 {
     "add-ons": {
+        "solar_type_stars": {
+            "license": "Public Domain",
+            "description": "This script is meant for a tour the 27 stars that are of the solar spectral type G2V greater than magnitude Vmag=6.5. The program was generated using data from Hipparcos Catalog. All G2V stars brighter than Vmag = 6.5 HIP=Hipparos Identifier. HIP 71683 Alpha Centauri A is the only star with known extrasolar planet in this list. CSPAR-The University of Alabama in Huntsville.",
+            "language": "English",
+            "title": "Solar Type Stars",
+            "checksum": "dbec4b8b2020a7af76b4770ee386cedf",
+            "license-url": "",
+            "supported": [
+                "0.10",
+                "0.11",
+                "0.12",
+                "0.13",
+                "0.14",
+                "0.15"
+            ],
+            "download-url": "https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/scripts/solar_type_stars.zip",
+            "download-filename": "solar_type_stars.zip",
+            "version": "2016.02.01",
+            "authors": [
+                {
+                    "url": "",
+                    "name": "Allen Gary",
+                    "email": ""
+                }
+            ],
+            "type": "script",
+            "download-size": 9236
+        },
         "cap_masoala": {
             "description": "This panorama was photographed from the abandoned French lighthouse at the southernmost point of the Masoala peninsula in Madagascar. It provides a spectacular view over the Indian Ocean and the Masoala peninsula that is still mainly covered with rainforest.",
             "license": "GPLv2",
@@ -81,7 +109,7 @@
             "download-size": 2279827
         }
     },
-    "version": "2016.02.25",
+    "version": "2016.03.19",
     "name": "Add-ons Catalog",
     "format": 1
 }
