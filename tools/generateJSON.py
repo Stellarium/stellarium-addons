@@ -73,7 +73,7 @@ for root, dirs, files in os.walk(srcPath):
 jsonObj = {
     'name':    'Add-ons Catalog',
     'format':  1,
-    'version': time.strftime("%Y.%m.%d"),
+    'date': time.strftime("%Y.%m.%d"),
     'add-ons': addons
 }
 

@@ -1,11 +1,12 @@
 {
+    "date": "2016.03.19",
     "add-ons": {
         "solar_type_stars": {
             "license": "Public Domain",
             "description": "This script is meant for a tour the 27 stars that are of the solar spectral type G2V greater than magnitude Vmag=6.5. The program was generated using data from Hipparcos Catalog. All G2V stars brighter than Vmag = 6.5 HIP=Hipparos Identifier. HIP 71683 Alpha Centauri A is the only star with known extrasolar planet in this list. CSPAR-The University of Alabama in Huntsville.",
             "language": "English",
             "title": "Solar Type Stars",
-            "checksum": "dbec4b8b2020a7af76b4770ee386cedf",
+            "checksum": "d72e2c38767cf51d4c7e49b8b5eaa28a",
             "license-url": "",
             "supported": [
                 "0.10",
@@ -17,7 +18,6 @@
             ],
             "download-url": "https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/scripts/solar_type_stars.zip",
             "download-filename": "solar_type_stars.zip",
-            "version": "2016.02.01",
             "authors": [
                 {
                     "url": "",
@@ -25,14 +25,15 @@
                     "email": ""
                 }
             ],
+            "date": "2016.02.01",
             "type": "script",
-            "download-size": 9236
+            "download-size": 9233
         },
         "cap_masoala": {
             "description": "This panorama was photographed from the abandoned French lighthouse at the southernmost point of the Masoala peninsula in Madagascar. It provides a spectacular view over the Indian Ocean and the Masoala peninsula that is still mainly covered with rainforest.",
             "license": "GPLv2",
             "title": "Cap Masoala, Madagascar",
-            "checksum": "12628bd98f5b632520061e37fd2148ce",
+            "checksum": "ec73700e0831e6347244c62ab5fede2f",
             "license-url": "http://www.gnu.org/licenses/gpl-2.0.html",
             "supported": [
                 "0.10",
@@ -44,7 +45,6 @@
             ],
             "download-url": "https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/landscapes/cap_masoala.zip",
             "download-filename": "cap_masoala.zip",
-            "version": "2016.02.01",
             "authors": [
                 {
                     "url": "http://www.domani.ch",
@@ -52,14 +52,15 @@
                     "email": "matthias@domani.ch"
                 }
             ],
+            "date": "2016.02.01",
             "type": "landscape",
-            "download-size": 3207038
+            "download-size": 3207035
         },
         "mars_husband_hill": {
             "description": "Johan transformed this Mars image from NASA into a spherical panorama that can be used with Stellarium. Mars rover Spirit made this image during August 24 to 27, 2005. Image credit: NASA/JPL-Caltech/Cornell.",
             "license": "Public Domain",
             "title": "Husband Hill, Mars",
-            "checksum": "141e1955710a5f7b95952a878a62c8b7",
+            "checksum": "fb62e12b77c3e427ba368c6a3c9f54de",
             "license-url": "",
             "supported": [
                 "0.10",
@@ -71,7 +72,6 @@
             ],
             "download-url": "https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/landscapes/mars_husband_hill.zip",
             "download-filename": "mars_husband_hill.zip",
-            "version": "2016.02.01",
             "authors": [
                 {
                     "url": "",
@@ -79,14 +79,15 @@
                     "email": ""
                 }
             ],
+            "date": "2016.02.01",
             "type": "landscape",
-            "download-size": 1823975
+            "download-size": 1823972
         },
         "mars_opportunity_rover": {
             "description": "This panorama provides the team's highest resolution view yet of the finely-layered outcrop rocks, wind ripples, and small cobbles and grains along the rim of the wide but shallow \"Erebus\" crater. Once the arm diagnostics and testing are completed, the team hopes to explore other layered outcrop rocks at Erebus and then eventually continue southward toward the large crater known as \"Victoria.\"",
             "license": "Public Domain",
             "title": "Mars Opportunity Rover",
-            "checksum": "8d144f899469b2dfa893755d93ecbbcc",
+            "checksum": "48f283af29318a7abdb3fa761da3e807",
             "license-url": "",
             "supported": [
                 "0.10",
@@ -105,11 +106,11 @@
                     "email": "lone_hiker@hotmail.com"
                 }
             ],
+            "date": "2016.02.01",
             "type": "landscape",
-            "download-size": 2279827
+            "download-size": 2279855
         }
     },
-    "version": "2016.03.19",
     "name": "Add-ons Catalog",
     "format": 1
 }
