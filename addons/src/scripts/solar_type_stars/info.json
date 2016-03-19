@@ -1,0 +1,20 @@
+{
+    "solar_type_stars":
+    {
+      "type": "script",
+      "title": "Solar Type Stars",
+      "version": "2016.02.01",
+      "description": "This script is meant for a tour the 27 stars that are of the solar spectral type G2V greater than magnitude Vmag=6.5. The program was generated using data from Hipparcos Catalog. All G2V stars brighter than Vmag = 6.5 HIP=Hipparos Identifier. HIP 71683 Alpha Centauri A is the only star with known extrasolar planet in this list. CSPAR-The University of Alabama in Huntsville.",
+      "language": "English",
+      "supported": ["0.10","0.11","0.12","0.13","0.14","0.15"],
+      "license": "Public Domain",
+      "license-url": "",
+      "authors": [
+        {
+          "name": "Allen Gary",
+          "email": "",
+          "url": ""
+        }
+      ]
+    }
+}
