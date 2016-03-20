@@ -1,19 +1,19 @@
 {
-    "mars_opportunity_rover":
+  "mars_opportunity_rover":
+  {
+    "type": "landscape",
+    "title": "Mars Opportunity Rover",
+    "date": "2016.02.01",
+    "description": "This panorama provides the team's highest resolution view yet of the finely-layered outcrop rocks, wind ripples, and small cobbles and grains along the rim of the wide but shallow \"Erebus\" crater. Once the arm diagnostics and testing are completed, the team hopes to explore other layered outcrop rocks at Erebus and then eventually continue southward toward the large crater known as \"Victoria.\"",
+    "supported": ["0.10","0.11","0.12","0.13","0.14","0.15"],
+    "license": "Public Domain",
+    "license-url": "",
+    "authors": [
     {
-      "type": "landscape",
-      "title": "Mars Opportunity Rover",
-      "date": "2016.02.01",
-      "description": "This panorama provides the team's highest resolution view yet of the finely-layered outcrop rocks, wind ripples, and small cobbles and grains along the rim of the wide but shallow \"Erebus\" crater. Once the arm diagnostics and testing are completed, the team hopes to explore other layered outcrop rocks at Erebus and then eventually continue southward toward the large crater known as \"Victoria.\"",
-      "supported": ["0.10","0.11","0.12","0.13","0.14","0.15"],
-      "license": "Public Domain",
-      "license-url": "",
-      "authors": [
-        {
-          "name": "Michael Smith",
-          "email": "lone_hiker@hotmail.com",
-          "url": ""
-        }
-      ]
+      "name": "Michael Smith",
+      "email": "lone_hiker@hotmail.com",
+      "url": ""
     }
+    ]
+  }
 }
