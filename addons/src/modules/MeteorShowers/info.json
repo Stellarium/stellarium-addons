@@ -1,0 +1,19 @@
+{
+  "showers":
+  {
+    "type": "plugin_catalog",
+    "title": "Meteor Showers",
+    "date": "2016.03.01",
+    "description": "Meteor showers catalog.",
+    "supported": ["0.13","0.14","0.15"],
+    "license": "GPL3",
+    "license-url": "http://www.gnu.org/licenses/gpl.html",
+    "authors": [
+    {
+      "name": "Marcos Cardinot",
+      "email": "mcardinot@gmail.com",
+      "url": "http://cardinot.net"
+    }
+    ]
+  }
+}

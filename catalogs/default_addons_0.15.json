@@ -1,5 +1,5 @@
 {
-    "date": "2016.03.19",
+    "date": "2016.03.20",
     "add-ons": {
         "solar_type_stars": {
             "license": "Public Domain",
@@ -55,6 +55,30 @@
             "date": "2016.02.01",
             "type": "landscape",
             "download-size": 3207035
+        },
+        "showers": {
+            "description": "Meteor showers catalog.",
+            "license": "GPL3",
+            "title": "Meteor Showers",
+            "checksum": "8090e127006e9e3504785981304a3241",
+            "license-url": "http://www.gnu.org/licenses/gpl.html",
+            "supported": [
+                "0.13",
+                "0.14",
+                "0.15"
+            ],
+            "download-url": "https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/modules/MeteorShowers.zip",
+            "download-filename": "MeteorShowers.zip",
+            "authors": [
+                {
+                    "url": "http://cardinot.net",
+                    "name": "Marcos Cardinot",
+                    "email": "mcardinot@gmail.com"
+                }
+            ],
+            "date": "2016.03.01",
+            "type": "plugin_catalog",
+            "download-size": 30288
         },
         "mars_husband_hill": {
             "description": "Johan transformed this Mars image from NASA into a spherical panorama that can be used with Stellarium. Mars rover Spirit made this image during August 24 to 27, 2005. Image credit: NASA/JPL-Caltech/Cornell.",
