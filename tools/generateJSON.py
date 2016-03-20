@@ -63,13 +63,13 @@ for root, dirs, files in os.walk(srcPath):
 
                 # key must be unique
                 if key in addons:
-                    print 'ERROR! Key is not unique! ' + root
+                    print('ERROR! Key is not unique! ' + root)
                     break
 
                 # adds add-on
                 addons.update(addon)
                 break
-            print 'ERROR! Unable to load ' + root
+            print('ERROR! Unable to load ' + root)
 
 jsonObj = {
     'name':    'Add-ons Catalog',
@@ -79,7 +79,7 @@ jsonObj = {
 }
 
 jsonOut = open('catalogs/default_addons_' + stellariumSeries + '.json', 'w')
-json.dump(jsonObj, jsonOut, indent=4, separators=(',', ': '))
+json.dump(jsonObj, jsonOut, indent=2, separators=(',', ': '))
 jsonOut.close()
 
 print('Done! ' + jsonOut.name)
