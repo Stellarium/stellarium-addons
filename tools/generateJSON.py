@@ -51,11 +51,12 @@ for root, dirs, files in os.walk(srcPath):
 
                 # download info
                 filename = os.path.basename(zipf)
+                relpath = os.path.relpath(os.path.dirname(root), srcPath)
                 addon[key].update(
                         {
                             'checksum': md5(zipf),
                             'download-size': os.path.getsize(zipf),
-                            'download-url': url + getFolder(addon[key]['type']) + '/' + filename,
+                            'download-url': url + relpath + '/' + filename,
                             'download-filename': filename
                         }
                 )
