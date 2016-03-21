@@ -20,6 +20,7 @@
 from  const import *
 import hashlib
 import json
+import shutil
 import sys
 import time
 
@@ -37,7 +38,12 @@ if os.path.basename(os.getcwd()) != 'stellarium-addons':
     print('ERROR! Are you in root?')
     sys.exit(1)
 
-print('Generating catalog: ' + stellariumSeries)
+# removing old catalog for the current serie
+destSrc = 'addons/src/addon/' + stellariumSeries
+destZip = 'addons/zip/addon/'
+shutil.rmtree(destSrc, ignore_errors=True)
+
+print('--> Generating catalog: ' + stellariumSeries)
 
 addons = {}
 for root, dirs, files in os.walk(srcPath):
@@ -71,15 +77,49 @@ for root, dirs, files in os.walk(srcPath):
                 break
             print('ERROR! Unable to load ' + root)
 
+# append this catalog as an add-on
+filename = stellariumSeries + '.zip'
+addonsObj = {
+    'addons':
+    {
+        'type': 'addon_catalog',
+        'title': 'Add-ons ' + stellariumSeries,
+        'date': time.strftime("%Y.%m.%d"),
+        'description': 'Catalog of add-ons.',
+        'supported': [stellariumSeries],
+        'licence': 'GPL3',
+        'license-url': 'http://www.gnu.org/licenses/gpl.html',
+        'authors': [
+        {
+          "name": "Marcos Cardinot",
+          "email": "mcardinot@gmail.com",
+          "url": "http://cardinot.net"
+        }
+        ],
+        'download-url': url + destZip + filename,
+        'download-filename': filename
+    }
+}
+addons.update(addonsObj)
+
 jsonObj = {
     'name':    'Add-ons Catalog',
     'format':  1,
     'date': time.strftime("%Y.%m.%d"),
+    'series': stellariumSeries,
     'add-ons': addons
 }
 
-jsonOut = open('catalogs/default_addons_' + stellariumSeries + '.json', 'w')
+os.mkdir(destSrc)
+jsonOut = open(destSrc + '/addons.json', 'w')
 json.dump(jsonObj, jsonOut, indent=2, separators=(',', ': '))
 jsonOut.close()
+print('    Done! ' + jsonOut.name)
 
-print('Done! ' + jsonOut.name)
+
+print('-> Generating the info.json file')
+
+jsonOut = open(destSrc + '/info.json', 'w')
+json.dump(addonsObj, jsonOut, indent=2, separators=(',', ': '))
+jsonOut.close()
+print('    Done! ' + jsonOut.name)
