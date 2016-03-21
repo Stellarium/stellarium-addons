@@ -11,7 +11,7 @@
     "licence": "GPL3",
     "title": "Add-ons 0.15",
     "date": "2016.03.21",
-    "download-url": "https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/addons/zip/addon/0.15.zip",
+    "download-url": "https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/addon/0.15.zip",
     "license-url": "http://www.gnu.org/licenses/gpl.html",
     "supported": [
       "0.15"
