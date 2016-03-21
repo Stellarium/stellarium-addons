@@ -17,19 +17,10 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-from  const import *
-import hashlib
 import json
-import shutil
 import sys
 import time
-
-def md5(path):
-    hash = hashlib.md5()
-    with open(path, 'rb') as f:
-        for chunk in iter(lambda: f.read(4096), b""):
-            hash.update(chunk)
-    return hash.hexdigest()
+from utils import *
 
 stellariumSeries = '0.15'
 
@@ -39,8 +30,8 @@ if os.path.basename(os.getcwd()) != 'stellarium-addons':
     sys.exit(1)
 
 # removing old catalog for the current serie
-destSrc = 'addons/src/addon/' + stellariumSeries
-destZip = 'addons/zip/addon/'
+destSrc = srcPath + '/addon/' + stellariumSeries
+destZip = zipPath + '/addon/'
 shutil.rmtree(destSrc, ignore_errors=True)
 
 print('--> Generating catalog: ' + stellariumSeries)
@@ -123,3 +114,7 @@ jsonOut = open(destSrc + '/info.json', 'w')
 json.dump(addonsObj, jsonOut, indent=2, separators=(',', ': '))
 jsonOut.close()
 print('    Done! ' + jsonOut.name)
+
+
+print('-> Generating the zip file')
+compressAddons(srcPath + '/addon', destZip)

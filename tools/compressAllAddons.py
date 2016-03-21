@@ -17,21 +17,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-from  const import *
-import shutil
-import zipfile
-
-def compressAddons(srcRoot, zipRoot):
-    for root, dirs, files in os.walk(srcRoot):
-        for addonName in dirs:
-            print 'Addon: ' + addonName
-            zipf = zipfile.ZipFile(os.path.join(zipRoot, addonName + '.zip'), 'w')
-            for root, dirs, files in os.walk(os.path.join(srcRoot, addonName)):
-                for file in files:
-                    print '    ' + file
-                    p = os.path.join(root, file)
-                    zipf.write(p, os.path.relpath(p, os.path.join(srcRoot, '..')))
-            zipf.close()
+from utils import *
 
 # clear zip directory
 shutil.rmtree(zipPath)
