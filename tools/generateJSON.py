@@ -87,7 +87,7 @@ addonsObj = {
           "url": "http://cardinot.net"
         }
         ],
-        'download-url': url + destZip + filename,
+        'download-url': url + 'addon/' + filename,
         'download-filename': filename
     }
 }
