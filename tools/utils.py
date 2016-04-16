@@ -35,6 +35,7 @@ def md5(path):
     return hash.hexdigest()
 
 def compressAddons(srcRoot, zipRoot):
+    category = os.path.basename(os.path.normpath(srcRoot))
     for root, dirs, files in os.walk(srcRoot):
         for addonName in dirs:
             print('Addon: ' + addonName)
@@ -42,7 +43,12 @@ def compressAddons(srcRoot, zipRoot):
             for root, dirs, files in os.walk(os.path.join(srcRoot, addonName)):
                 for file in files:
                     print '    ' + file
-                    p = os.path.join(root, file)
-                    zipf.write(p, os.path.relpath(p, os.path.join(srcRoot, '..')))
+                    absFilePath = os.path.join(root, file)
+                    if category == 'textures':
+                        absZipPath = os.path.join(category, file)
+                    else:
+                        absZipPath = os.path.relpath(absFilePath, os.path.join(srcRoot, '..'))
+                    zipf.write(absFilePath, absZipPath)
             zipf.close()
+        break
 
