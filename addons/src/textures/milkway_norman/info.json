@@ -1,0 +1,19 @@
+{
+  "milkyway_norman":
+  {
+    "type": "texture",
+    "title": "Milky Way",
+    "date": "2016.03.01",
+    "description": "A better Milky Way texture, which based on Nick Risinger's Photopic Sky Survey.",
+    "supported": ["0.10","0.11","0.12","0.13","0.14","0.15"],
+    "license": "CC-BY-NC 2.0",
+    "license-url": "http://creativecommons.org/licenses/by-nc/2.0/",
+    "authors": [
+    {
+      "name": "Ian Norman",
+      "email": "",
+      "url": "http://www.lonelyspeck.com"
+    }
+    ]
+  }
+}
