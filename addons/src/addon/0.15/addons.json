@@ -1,7 +1,34 @@
 {
-  "date": "2016.03.21",
+  "date": "2016.04.17",
   "series": "0.15",
   "add-ons": {
+    "textures1024": {
+      "description": "Pack of textures from Celestia and Space Engine projects (middle resolution).",
+      "license": "",
+      "title": "1K Textures",
+      "checksum": "2d7157c3cec1e28f1a6d38488b4a8507",
+      "license-url": "",
+      "supported": [
+        "0.10",
+        "0.11",
+        "0.12",
+        "0.13",
+        "0.14",
+        "0.15"
+      ],
+      "download-url": "https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/textures/textures1024.zip",
+      "download-filename": "textures1024.zip",
+      "authors": [
+        {
+          "url": "http://stellarium.org",
+          "name": "Stellarium Team",
+          "email": ""
+        }
+      ],
+      "date": "2016.03.01",
+      "type": "texture",
+      "download-size": 20442818
+    },
     "mars_husband_hill": {
       "description": "Johan transformed this Mars image from NASA into a spherical panorama that can be used with Stellarium. Mars rover Spirit made this image during August 24 to 27, 2005. Image credit: NASA/JPL-Caltech/Cornell.",
       "license": "Public Domain",
@@ -28,6 +55,26 @@
       "date": "2016.02.01",
       "type": "landscape",
       "download-size": 1823928
+    },
+    "addons": {
+      "authors": [
+        {
+          "url": "http://cardinot.net",
+          "name": "Marcos Cardinot",
+          "email": "mcardinot@gmail.com"
+        }
+      ],
+      "description": "Catalog of add-ons.",
+      "licence": "GPL3",
+      "title": "Add-ons 0.15",
+      "date": "2016.04.17",
+      "download-url": "https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/addon/0.15.zip",
+      "license-url": "http://www.gnu.org/licenses/gpl.html",
+      "supported": [
+        "0.15"
+      ],
+      "type": "addon_catalog",
+      "download-filename": "0.15.zip"
     },
     "showers": {
       "description": "Meteor showers catalog.",
@@ -108,25 +155,59 @@
       "type": "landscape",
       "download-size": 3206991
     },
-    "addons": {
-      "authors": [
-        {
-          "url": "http://cardinot.net",
-          "name": "Marcos Cardinot",
-          "email": "mcardinot@gmail.com"
-        }
-      ],
-      "description": "Catalog of add-ons.",
-      "licence": "GPL3",
-      "title": "Add-ons 0.15",
-      "date": "2016.03.21",
-      "download-url": "https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/addon/0.15.zip",
-      "license-url": "http://www.gnu.org/licenses/gpl.html",
+    "textures512": {
+      "description": "Pack of textures from Celestia and Space Engine projects (low resolution).",
+      "license": "",
+      "title": "0.5K Textures",
+      "checksum": "b0faf2215cf420ab690ebd8735e81960",
+      "license-url": "",
       "supported": [
+        "0.10",
+        "0.11",
+        "0.12",
+        "0.13",
+        "0.14",
         "0.15"
       ],
-      "type": "addon_catalog",
-      "download-filename": "0.15.zip"
+      "download-url": "https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/textures/textures512.zip",
+      "download-filename": "textures512.zip",
+      "authors": [
+        {
+          "url": "http://stellarium.org",
+          "name": "Stellarium Team",
+          "email": ""
+        }
+      ],
+      "date": "2016.03.01",
+      "type": "texture",
+      "download-size": 9469762
+    },
+    "milkyway_norman": {
+      "description": "A better Milky Way texture, which based on Nick Risinger's Photopic Sky Survey.",
+      "license": "CC-BY-NC 2.0",
+      "title": "Milky Way",
+      "checksum": "20bb7a31d89611b6a1b99eedfd877c39",
+      "license-url": "http://creativecommons.org/licenses/by-nc/2.0/",
+      "supported": [
+        "0.10",
+        "0.11",
+        "0.12",
+        "0.13",
+        "0.14",
+        "0.15"
+      ],
+      "download-url": "https://cdn.rawgit.com/Stellarium/stellarium-addons/master/addons/zip/textures/milkway_norman.zip",
+      "download-filename": "milkway_norman.zip",
+      "authors": [
+        {
+          "url": "http://www.lonelyspeck.com",
+          "name": "Ian Norman",
+          "email": ""
+        }
+      ],
+      "date": "2016.03.01",
+      "type": "texture",
+      "download-size": 6391791
     },
     "mars_opportunity_rover": {
       "description": "This panorama provides the team's highest resolution view yet of the finely-layered outcrop rocks, wind ripples, and small cobbles and grains along the rim of the wide but shallow \"Erebus\" crater. Once the arm diagnostics and testing are completed, the team hopes to explore other layered outcrop rocks at Erebus and then eventually continue southward toward the large crater known as \"Victoria.\"",
