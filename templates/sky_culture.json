@@ -1,0 +1,19 @@
+{
+  "unique-key":
+  {
+    "type": "sky_culture",
+    "title": "",
+    "date": "yyyy.mm.dd",
+    "description": "",
+    "supported": ["0.10","0.11","0.12","0.13","0.14","0.15"],
+    "license": "",
+    "license-url": "",
+    "authors": [
+    {
+      "name": "",
+      "email": "",
+      "url": ""
+    }
+    ]
+  }
+}
